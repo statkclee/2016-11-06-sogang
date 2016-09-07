@@ -55,15 +55,18 @@ day2_pm: "통계모형과 기계학습 - R"
   the pitch.
 -->
 <p>
-<a href=http://datacarpentry.org>Data Carpentry</a> workshops are for any researcher 
-who has data they want to analyze, and no prior computational experience is required. 
-This hands-on workshop teaches basic concepts, skills and tools for working more 
-effectively with data. 
+<a href=http://datacarpentry.org>데이터 카펜트리(Data Carpentry)</a> 워크샵은 분석하고자 하는 데이터를 갖는 연구원을 위한 자리로,
+사전 전산 경험이 필요한 것은 아니다. 실습 워크샵을 통해 데이터를 효과적으로 다루는데 필요한
+기본 개념, 기술, 도구를 배우게 된다.
 </p>
 <p>
-We will cover {{page.day1_am}}, {{page.day1_pm}}, {{page.day2_am}} and {{page.day2_pm}}.
 
-Participants should bring their laptops and plan to participate actively. By the end of the workshop learners should be able to more effectively manage and analyze data and be able to apply the tools and approaches directly to their ongoing research.
+양일에 걸친 워크샵을 통해 {{page.day1_am}}, {{page.day1_pm}}, {{page.day2_am}} and {{page.day2_pm}}을 배우게 된다.
+
+워크샵 참석자는 노트북을 지참하여 참석하여야 하며 가능하면 뜻을 같이 하는 친구와 함께 적극적인 참여를 권장합니다.
+
+워크샵을 말미에는 데이터를 효과적으로 다루고 분석할 수 있는 역량을 갖추게 되어, 학습한 도구와 접근법을 바로 
+진행중인 연구에 적용할 수 있게 된다.
 </p>
 
 <!--
@@ -73,8 +76,8 @@ Participants should bring their laptops and plan to participate actively. By the
   workshop is only open to people from a particular institution.
 -->
 <p>
-  <strong>Who:</strong>
-  The course is aimed at graduate students and other researchers.
+  <strong>워크샵 참여 대상:</strong>
+  대학원생과 연구원, 데이터 과학 실무자를 목표로 개발된 과정입니다.
 </p>
 
 <!--
@@ -88,11 +91,10 @@ Participants should bring their laptops and plan to participate actively. By the
 {% if page.latlng %}
 <p>
   <strong>Where:</strong>
-  {{page.address}}.
-  Get directions with
+  {{page.address}}.  
   <a href="//www.openstreetmap.org/?mlat={{page.latlng | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>
-  or
-  <a href="//maps.google.com/maps?q={{page.latlng}}">Google Maps</a>.
+  혹은
+  <a href="//maps.google.com/maps?q={{page.latlng}}">Google Maps</a>을 참조하여 찾아오세요.
 </p>
 {% endif %}
 
@@ -102,12 +104,21 @@ Participants should bring their laptops and plan to participate actively. By the
   Modify the block below if there are any special requirements.
 -->
 <p>
-  <strong>Requirements:</strong> Participants must bring a laptop with a 
-  Mac, Linux, or Windows operating sytem (not a tablet, Chromebook, etc.) that they have administrative privileges
-  on. They should have a few specific software packages installed (listed
-  <a href="#setup">below</a>). They are also required to abide by
-  Data Carpentry's
-  <a href="{{site.dc_site}}/code-of-conduct/">Code of Conduct</a>.
+  <strong>사전 준비물:</strong> 워크샵에 참여하시는 분은 관리자 권한을 갖는 맥, 리눅스, 윈도우 운영체제가 탐재된 노트북을 
+  지참하셔야 합니다. (스마트폰, 태블릿, 크롬북 등은 권장하지 않음) <a href="#setup">아래 설정</a> 표기된 데이터과학 컴퓨팅을 위한 
+  사전 소프트웨어 팩키지를 설치하셔야 됩니다.  <a href="http://statkclee.github.io/xwmooc-sc/conduct.html">행동강령(code of conduct) 준수</a>를 하셔야 하고,
+  사전에 다음 정보를 탐독하시면 도움이 됩니다. <a href="https://statkclee.github.io/xwMOOC/">기계와 더불어 사는 한국인 xwMOOC</a> 교육 콘텐츠.  
+
+  <ul>
+    <li>컴퓨터 과학 언플러그드</li>
+    <li>리보그 (러플의 후예)</li>
+    <li>소프트웨어 카펜트리</li>
+    <li>정보교육을 위한 파이썬</li>
+    <li> <a href="http://statkclee.github.io/data-science/"> 정보교육을 위한 파이썬 </a> </li>    
+    <li>기계학습</li>    
+    <li>R 병렬 프로그래밍</li>
+    <li>xwMOOC 딥러닝</li>
+  </ul>
 </p>
 
 <!--
@@ -118,14 +129,13 @@ Participants should bring their laptops and plan to participate actively. By the
   used.
 -->
 <p>
-  <strong>Contact</strong>:
-  Please mail
+  <strong>연락처</strong>:
+  궁금하신 내용은 전자우편을 보내주세요.
   {% if page.contact %}
     <a href='mailto:{{page.contact}}'>{{page.contact}}</a>
   {% else %}
     <a href='mailto:{{site.contact}}'>{{site.contact}}</a>
-  {% endif %}
-  for more information.
+  {% endif %}  
 </p>
 
 <hr/>
@@ -137,30 +147,25 @@ Participants should bring their laptops and plan to participate actively. By the
   to match your plans.  You may also want to change 'Day 1' and 'Day
   2' to be actual dates or days of the week.
 -->
-<h2>Preliminary Schedule</h2>
+<h2>워크샵 일정</h2>
 
 <!-- DO NOT EDIT SURVEY LINKS -->
-<p><em>Surveys</em></p>
-<p>Please be sure to complete these surveys before and after the workshop.</p>
-<p><a href='{{ site.dc_pre_survey }}'>Pre-workshop Survey</a></p>
-<p><a href='{{ site.dc_post_survey }}'>Post-workshop Survey</a></p>
-
 
 
 <div class="row">
   <div class="col-md-6">
 
-    <h3>Day 1</h3>
+    <h3>첫째날</h3>
     <table class="table table-striped">
-      <tr> <td>Morning</td>  <td>{{page.day1_am}}</td> </tr>
-       <tr> <td>Afternoon</td>  <td>{{page.day1_pm}}</td> </tr>
+      <tr> <td>오전</td>  <td>{{page.day1_am}}</td> </tr>
+      <tr> <td>오후</td>  <td>{{page.day1_pm}}</td> </tr>
     </table>
  
  
-    <h3>Day 2</h3>
+    <h3>둘째날</h3>
     <table class="table table-striped">
-      <tr> <td>Morning</td>  <td>{{page.day2_am}}</td> </tr>
-      <tr> <td>Afternoon</td>  <td>{{page.day2_pm}}</td> </tr>
+      <tr> <td>오전</td>  <td>{{page.day2_am}}</td> </tr>
+      <tr> <td>오후</td>  <td>{{page.day2_pm}}</td> </tr>
     </table>
  </div>
 </div>
@@ -187,100 +192,64 @@ Participants should bring their laptops and plan to participate actively. By the
 
 <hr/>
 
-<!--
-  SYLLABUS
-
-  Show what topics will be covered.
-
-  1. If your workshop is R rather than Python, remove the comment
-     around that section and put a comment around the Python section.
-  2. Some workshops will delete SQL.
-  3. Please make sure the list of topics is synchronized with what you
-     intend to teach.
-  4. You may need to move the div's with class="col-md-6" around inside
-     the div's with class="row" to balance the multi-column layout.
-
-  This is one of the places where people frequently make mistakes, so
-  please preview your site before committing, and make sure to run
-  'tools/check' as well.
--->
-<!--
-<h2>Syllabus</h2>
+<h2>교육과정</h2>
 
 <div class="row">
   <div class="col-md-6">
-    <h3>The Unix Shell</h3>
+    <h3>유닉스 쉘</h3>
     <ul>
-      <li>Files and directories</li>
-      <li>History and tab completion</li>
-      <li>Pipes and redirection</li>
-      <li>Looping over files</li>
-      <li>Creating and running shell scripts</li>
-      <li>Finding things</li>
-      <li><a href="{{site.swc_lessons}}/ref/01-shell.html">Reference...</a></li>
+	    <li>쉘(shell) 소개</li>
+	    <li>파일과 디렉토리</li>
+	    <li>파일과 디렉토리 생성</li>
+	    <li>파이프(pipe)와 필터(filter)</li>
+	    <li>루프(Loops)</li>
+	    <li>쉘 스크립트(shell script)</li>
+	    <li>파일, 문자, 디렉토리  등 찾기</li>
+        <li><a href="http://statkclee.github.io/shell-novice/index-kr.html">Reference...</a></li>
     </ul>
   </div>
   <div class="col-md-6">
-    <h3>Programming in Python</h3>
+    <h3>R 프로그래밍</h3>
     <ul>
-      <li>Using libraries</li>
-      <li>Working with arrays</li>
-      <li>Reading and plotting data</li>
-      <li>Creating and using functions</li>
-      <li>Loops and conditionals</li>
-      <li>Defensive programming</li>
-      <li>Using Python from the command line</li>
-      <li><a href="{{site.swc_lessons}}/ref/03-python.html">Reference...</a></li>
+	    <li>환자 데이터(Patient Data) 분석</li>
+	    <li>함수 생성</li>
+	    <li>다수의 데이터셋 분석</li>
+	    <li>조건 선택</li>
+	    <li>명령-라인(Command-Line) 프로그램</li>
+	    <li><a href="http://statkclee.github.io/r-novice-inflammation/index-kr.html">Reference...</a></li>
     </ul>
   </div>
-
-  <div class="col-md-6">
-    <h3>Programming in R</h3>
-    <ul>
-      <li>Working with vectors and data frames</li>
-      <li>Reading and plotting data</li>
-      <li>Creating and using functions</li>
-      <li>Loops and conditionals</li>
-      <li>Using R from the command line</li>
-      <li><a href="{{site.swc_lessons}}/ref/06-R.html">Reference...</a></li>
-    </ul>
-  </div>
-
 </div>
 
 <div class="row">
   <div class="col-md-6">
-    <h3>Version Control with Git</h3>
+    <h3>버젼 관리(Git)</h3>
     <ul>
-      <li>Creating a repository</li>
-      <li>Recording changes to files: <code>add</code>, <code>commit</code>, ...</li>
-      <li>Viewing changes: <code>status</code>, <code>diff</code>, ...</li>
-      <li>Ignoring files</li>
-      <li>Working on the web: <code>clone</code>, <code>pull</code>, <code>push</code>, ...</li>
-      <li>Resolving conflicts</li>
-      <li>Open licenses</li>
-      <li>Where to host work, and why</li>
-      <li><a href="{{site.swc_lessons}}/ref/02-git.html">Reference...</a></li>
+    <li>버젼 관리 소개</li>
+    <li>파일에 변경사항 저장: <code>add</code>, <code>commit</code>, ...</li>
+    <li>변경사항 확인: <code>status</code>, <code>diff</code>, ...</li>
+    <li>파일 무시(ignore)</li>
+    <li>웹에서 작업: <code>clone</code>, <code>pull</code>, <code>push</code>, ...</li>
+    <li>충돌(Conflicts) 해결</li>
+    <li>공개 과학(Open Science)</li>
+    <li>협업(Collaboration)</li>
+    <li><a href="http://statkclee.github.io/git-novice/index-kr.html">Reference...</a></li>
     </ul>
   </div>
   <div class="col-md-6">
-    <h3>Managing Data with SQL</h3>
+    <h3>통계모형과 기계학습</h3>
     <ul>
-      <li>Reading and sorting data</li>
-      <li>Filtering with <code>where</code></li>
-      <li>Calculating new values on the fly</li>
-      <li>Handling missing values</li>
-      <li>Combining values using aggregation</li>
-      <li>Combining information from multiple tables using <code>join</code></li>
-      <li>Creating, modifying, and deleting data</li>
-      <li>Programming with databases</li>
-      <li><a href="{{site.swc_lessons}}/ref/04-sql.html">Reference...</a></li>
+      <li>모형이란 무엇인가?</li>
+      <li>선형대수와 회귀모형</li>
+      <li>모형 성능과 평가</li>
+      <li>전통 통계모형과 기계학습 모형</li>
+      <li><a href="http://statkclee.github.io/ml/">Reference...</a></li>
     </ul>
   </div>
 </div>
-
 
 <hr/>
+
 -->
 
 <!--
@@ -295,20 +264,21 @@ Participants should bring their laptops and plan to participate actively. By the
   'tools/check' as well.
 -->
 
-<h2 id="setup">Setup</h2>
+<h2 id="setup">설정</h2>
 
 <p>
-To participate in a Data Carpentry workshop, you will need working copies of the 
-described software. Please make sure to install everything (or at least to download 
-the installers) before the start of your workshop. Participants should bring and use 
-their own laptops to insure the proper setup of tools for an efficient workflow 
-once you leave the workshop.
-<p>
-Please follow these <a href=install.html>Setup Instructions</a>.
+데이터 카펜트리 워크샵에 참여하기 위해서, 다음에 기술된 소프트웨어 툴체인을 구축하여 
+사전에 동작하게 만들 필요가 있다. 워크샵 시작전에 필요한 모든 소프트웨어가 설치되었는지 확인한다.
+(적어도 소프트웨어를 다운로드하거나 인스톨러를 준비)
+
+워크샵이 마무리 되어 집에 갈 준비가 되면 데이터 과학 업무를 수행하는데 적합한 툴체인과 효율적인 작업흐름을 갖추게 된다.
 
 <p>
-  We maintain a list of common issues that occur during installation as a reference for instructors
-  that may be useful on the
-  <a href = "https://github.com/swcarpentry/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
+<a href=install.html>설치 안내</a>를 참고하여 준비한다.
+
+<p>
+  데이터 카펜트리에서 
+  <a href = "https://github.com/swcarpentry/workshop-template/wiki/Configuration-Problems-and-Solutions">환경설치 문제점과 해결책에 대한 위키 페이지</a>를 운영하고 있으니
+  설치시 참조한다.
 </p>
 
